@@ -1,5 +1,4 @@
 const arr = [-1, 0, 3, 5, 9, 12]; // target = 9  // output expected = 4  // 9 exists in nums and its index is 4
-const arr1 = [-1, 0, 3, 5, 9, 12]; // target = 2 // output expected = -1 // 2 does not exist in nums so return -1
 
 // this isn't a binary search
 const binarySearch = (nums, target) => {
@@ -21,20 +20,26 @@ const binarySearch2 = (nums, target) => {
   return -1;
 };
 
+// iterative function to implement Binary Search
 const realBinarySearch = (arr, target) => {
-  const max = arr.length - 1;
-  const mid = Math.floor(max / 2);
+  let start = 0;
+  let end = arr.length - 1;
 
-  if (mid === target) return mid;
+  while (start <= end) {
+    let mid = Math.floor((start + end) / 2);
+    console.log(mid);
 
-
-  for (l){
-    
+    if (arr[mid] === target) return true;
+    else if (arr[mid] < target) {
+      start = mid + 1;
+    } else end = mid - 1;
   }
 
+  return false;
 };
 
-const r2 = realBinarySearch(arr);
+const r2 = realBinarySearch(arr, 12);
+console.log(r2);
 
 // const r = binarySearch(arr, 9);
 // console.log(r);
