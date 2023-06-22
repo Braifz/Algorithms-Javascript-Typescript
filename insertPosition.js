@@ -2,7 +2,7 @@ let arr = [10, 20, 30, 40]; // si el numero que le paso por parametro 'num' esta
 
 const insertPosition = (arr, num) => {
   let newArr = arr.filter((e, index) => {
-    return arr[e] == num ? index : "no existe el elemento";
+    return arr[e] == num ? index : 'no existe el elemento';
   });
   console.log(newArr);
 };
