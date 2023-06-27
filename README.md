@@ -1,3 +1,3 @@
-# Algorithms-javascript
+# Algorithms Javascript/Typescript
 
 Problems that I resolved in leetcode. 😄
