@@ -1,3 +1,3 @@
 # Algorithms-javascript
 
-Problems that I was solving in leetcode. 😄
+Problems that I resolved in leetcode. 😄
