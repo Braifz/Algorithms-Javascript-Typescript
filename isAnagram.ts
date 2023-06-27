@@ -1,9 +1,12 @@
-function isAnagram(s: string, t: string): boolean {
-  for (let i: number = 0; i < s.length; i++) {
-    for (let j: number = 0; i < t.length; j++) {}
-  }
-  return false;
-}
+function isAnagram(s: string, t: string): boolean { 
+  if(s.length !== t.length) return false;
 
-const s = 'anagram';
-const t = 'nagaram';
+  const newS :string[] = s.split("").sort();
+  const newT :string[] = t.split("").sort();
+
+  for(let i:number = 0 ;i < newS.length; i++){
+      if(newS[i] !== newT[i]) return false;
+  }
+  
+  return true;
+};
